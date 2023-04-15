@@ -15,7 +15,14 @@ public class OperatorsUnary {
 
         System.out.println("Order of Precedence\n" +
                 "\tExpressios are evaluated left to right by default\n" +
-                "\tThis natural precedence can by change by using parentheses\n");
+                "\tThis natural precedence can by change by using parentheses\n" +
+                "*, / and % has precedence than +, -\n" +
+                "= (assignment) has the lowest precedence\n");
+
+        int result = 7 + 10 * 2;
+        int result2 = (7 + 10) * 2;
+        System.out.println(result); //27
+        System.out.println(result2); //34
 
         System.out.println("Prefix and Postfix Operands\n" +
                 "\t++ increment a variable by one\n" +
