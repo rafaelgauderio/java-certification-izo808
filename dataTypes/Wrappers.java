@@ -45,13 +45,13 @@ public class Wrappers {
         int int10 = (int)obj2; //unboxing has to be explicit
 
         System.out.println("Boxing\n" +
-                "\tBoxing is the conversion of converting a value type to a oject type");
+                "\tBoxing is the conversion of a value type to a object type");
         System.out.println(int7); //15
         System.out.println(obj1); //15
 
 
         System.out.println("\nUnboxing\n" +
-                "\tUnboxing is an explict conversion from tupe objeto to  value type");
+                "\tUnboxing is an explict conversion from type objet to  value type");
         System.out.println(int8); //3
         System.out.println(int9); //3
         System.out.println(obj2); //17
