@@ -10,7 +10,8 @@ public class OperatorCompoundAssignment {
                 "x*=y   equals x = x * y" +
                 "x/=y   equals x = x/y");
 
-        System.out.println("There is a in-bluid implicit cast");
+        System.out.println("There is a in-bluid implicit cast\n" +
+                "The experession on the right side is always placed in the parentheses");
 
         int i =1;
 
@@ -18,7 +19,6 @@ public class OperatorCompoundAssignment {
         // i = (4) * (4 + 3 ) + 1;
         // i = 28 + 1 = 29
         System.out.println(i); //29
-
 
     }
 }
