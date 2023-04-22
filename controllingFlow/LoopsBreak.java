@@ -6,7 +6,11 @@ public class LoopsBreak {
 
         nestedLoops();
         nesteLoopsString();
+        normalBreakLoop();
+        labellBreakLoop();
+        labellInnerBreakLoop();
     }
+
 
     public static void nestedLoops() {
         int linha = 1;
@@ -38,9 +42,55 @@ public class LoopsBreak {
             }
         }
         System.out.println("-------------------------");
+    }
 
+    public static void normalBreakLoop() {
+
+        System.out.println("\nBreak out of the nested loop");
+        for (int i = 0; i <= 2; i++) {
+            for (int j = 0; j <= 50; j++) {
+                if (j == 4) {
+                    break; // vai sair do loop de j quando j =2, então não vai ter j=2 ou maior impresso
+                }
+                System.out.println("i: " + i + " | j: " + j);
+            }
+        }
+        System.out.println("-------------------------");
 
     }
 
+    private static void labellBreakLoop() {
 
+        System.out.println("\nOuter Loop out of the nested loop");
+        OUTER:
+        for (int i = 0; i <= 2; i++) {
+            for (int j = 0; j <= 50; j++) {
+                if (j == 4) {
+                    break OUTER;
+                    // quando j =4 no loop do for, vai sair do loop do i,
+                }
+                System.out.println("i: " + i + " | j: " + j);
+            }
+        }
+        System.out.println("-------------------------");
+
+    }
+
+    public static void labellInnerBreakLoop() {
+
+        System.out.println("\nINNER Loop out of the nested loop");
+
+        for (int i = 0; i <= 2; i++) {
+            INNER:
+            for (int j = 0; j <= 50; j++) {
+                if (j == 4) {
+                    break INNER;
+                    // sai apenas do loop j quando for maior maior ou igual a 4
+                    // executa todos os loops do bloco i
+                }
+                System.out.println("i: " + i + " | j: " + j);
+            }
+        }
+        System.out.println("-------------------------");
+    }
 }
