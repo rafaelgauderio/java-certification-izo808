@@ -11,6 +11,7 @@ public class Loops {
 
         traditionalFor();
         enhancedFor();
+        whileLoop();
     }
 
     public static void traditionalFor () {
@@ -56,5 +57,25 @@ public class Loops {
         for(var nickname : numbers) {
             System.out.println(nickname);
         }
+    }
+
+    public static void whileLoop () {
+
+        System.out.println("While loops");
+        int x=1;
+        while(x<=10) {
+            System.out.println("Rafael de Luca " + x);
+            x++;
+            // It will print Rafael de Luca 10 times
+        }
+
+        int y=15;
+        while(y==20) {
+            // it will never enter on the loop 15 !=20
+            System.out.println(y);
+            y=y+5;
+        }
+
+        System.out.println("------------------");
     }
 }
