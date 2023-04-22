@@ -9,6 +9,9 @@ public class LoopsBreak {
         normalBreakLoop();
         labellBreakLoop();
         labellInnerBreakLoop();
+        normalContinueLoop();
+        labelContinueLoop();
+        labelInnerContinueLoop();
     }
 
 
@@ -61,7 +64,7 @@ public class LoopsBreak {
 
     private static void labellBreakLoop() {
 
-        System.out.println("\nOuter Loop out of the nested loop");
+        System.out.println("Outer Loop out of the nested loop");
         OUTER:
         for (int i = 0; i <= 2; i++) {
             for (int j = 0; j <= 50; j++) {
@@ -92,5 +95,60 @@ public class LoopsBreak {
             }
         }
         System.out.println("-------------------------");
+    }
+
+    public static void normalContinueLoop() {
+        int linha =1;
+
+        System.out.println("\nContinue bypasses each time the conditional is true");
+        for (int i = 0; i <= 2; i++) {
+            for (int j = 0; j <= 10; j++) {
+                if (j == 5) {
+                    continue; // passa direto toda vez que j=5 e pula para o 6 e continua
+                    // não vai ser impresso j=5
+                }
+                System.out.println("i: " + i + " | j: " + j + " | " + linha);
+                linha++;
+            }
+        }
+        System.out.println("-------------------------");
+
+    }
+
+    public static void labelContinueLoop() {
+
+        System.out.println("OUTER Continue bypasses each time the conditional is true\n" +
+                "Exits the inner loop and continues with OUTERLOOP");
+        OUTER:
+        for (int i = 0; i <= 2; i++) {
+            for (int j = 0; j <= 10; j++) {
+                if (j == 5) {
+                    continue OUTER; // sai do loop interno quando j=5 e continua com o loop externo
+                }
+                System.out.println("i: " + i + " | j: " + j);
+            }
+        }
+        System.out.println("-------------------------");
+
+    }
+
+    public static void labelInnerContinueLoop() {
+        int linha =1;
+        System.out.println("Inner Continue bypasses each time the conditional is true\n" +
+                "It will have the same behavior that the normal continue ");
+
+        for (int i = 0; i <= 2; i++) {
+            INTER:
+            for (int j = 0; j <= 10; j++) {
+                if (j == 5) {
+                    continue INTER; // passa direto quando j=5 e pula para o j=6
+
+                }
+                System.out.println("i: " + i + " | j: " + j  + " | " + linha);
+                linha++;
+            }
+        }
+        System.out.println("-------------------------");
+
     }
 }
