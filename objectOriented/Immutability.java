@@ -4,7 +4,7 @@ public class Immutability {
 
     public static void main(String[] args) {
         System.out.println("Classes immutable by default: Wrappes.\n" +
-                "Class mutalbe by default: StringBuilder\n" +
+                "Class mutable by default: StringBuilder\n" +
                 "Use the keyword 'final' to make the primitives and objects immutable.\n");
 
         System.out.println("How to make yout on type immutable\n" +
