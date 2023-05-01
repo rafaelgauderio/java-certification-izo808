@@ -1,6 +1,5 @@
 package objectOriented.inheritance;
 
-
 public class Animal extends Object {
     // have to be protected the parameter,
     // private parameters will not be visable on the sub class
