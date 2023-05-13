@@ -44,6 +44,16 @@ public class DefaultStaticMethosTheory implements DefaultMethods {
                 "Implementation classes are NOT required to implement an interfaces defaul or static methods.\n" +
                 "Default and static are not allowed together\n" +
                 "Default must hava a body, abstract must not have a body");
-    }
 
+        System.out.println("\nstatic inferface method\n" +
+                "Interface can include static methods with concrete implementations.\n" +
+                "To make easier to organise your helper methods in your libreries, we can\n" +
+                "\tkeep static methods specific to an interface rather than in a separate class.\n" +
+                "static interface methods are public by default.\n" +
+                "static interface methods must have a concrete body.\n" +
+                "To invoke a static interface method, the interface must bu included in the invocation.\n" +
+                "static method are not inherited, so they can not be override\n" +
+                "static methods are related to a class.\n" +
+                "default methods are related to an instance of the class");
+    }
 }

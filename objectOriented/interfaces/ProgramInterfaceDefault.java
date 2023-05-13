@@ -28,6 +28,8 @@ public class ProgramInterfaceDefault {
         // can not new a interface (abstract by default). Abstract class not be instantiated
         //Animal a1 = new Animal ();
 
+        System.out.println("Default methods are related to an instance of the class.\n");
+
         //Can use a interface as an reference
         Animal galgo = new GreyhoundDog();
         galgo.move(); // ...move very fast;
@@ -35,7 +37,5 @@ public class ProgramInterfaceDefault {
         Animal tartaruga = new Turtle();
         tartaruga.move(); //... move slowly
     }
-
-
 
 }
