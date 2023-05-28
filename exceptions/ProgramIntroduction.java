@@ -24,8 +24,14 @@ public class ProgramIntroduction {
                 "\tRuntimeExceptions, that are unchecked exception do not obey the rule above.\n" +
                 "Runtimes Exceptions.\n" +
                 "\tArithmeticException, ArrayIndexOutOfBoundsException, ClassCastException, IllegaArgumentException,\n" +
-                "\tNullPointerException (trying to call a method that the reference is null, NumberFormatException\n" +
-                "");
+                "\tNullPointerException (trying to call a method that the reference is null, NumberFormatException\n");
 
+        System.out.println("Checked Exceptions\n" +
+                "IOException (reading/writing a file)\n" +
+                "FileNotFoundException (trying to access a file that does not exist\n");
+
+        System.out.println("Call Stack\n" +
+                "Is the chain in order of the methods that yout program executes to get to the current method.\n" +
+                "The last method called is at the top of the stack and the first method is at the bottom.\n");
     }
 }
