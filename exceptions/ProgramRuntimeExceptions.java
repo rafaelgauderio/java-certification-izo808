@@ -15,6 +15,7 @@ public class ProgramRuntimeExceptions {
         System.out.println(names[2]); //Array Index Out Of Bounds Exception
         */
 
+        /*
         try {
             int number = Integer.parseInt("17");
             System.out.println(number);
@@ -24,6 +25,19 @@ public class ProgramRuntimeExceptions {
         } catch (NumberFormatException error) {
             error.printStackTrace();
         }
+         */
 
+        ProgramRuntimeExceptions program = new ProgramRuntimeExceptions();
+        System.out.println(program.squareRoot(81));
+        System.out.println(program.squareRoot(-20)); //ILLegal Argument Exception
+
+    }
+
+    public double squareRoot(int number) {
+        if(number < 0) {
+            throw new IllegalArgumentException();
+        }
+
+        return Math.sqrt(number);
     }
 }
