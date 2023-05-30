@@ -31,7 +31,7 @@ public class ProgramIntroduction {
                 "FileNotFoundException (trying to access a file that does not exist\n");
 
         System.out.println("Call Stack\n" +
-                "Is the chain in order of the methods that yout program executes to get to the current method.\n" +
+                "Is the chain in order of the methods that your program executes to get to the current method.\n" +
                 "The last method called is at the top of the stack and the first method is at the bottom.\n");
     }
 }
