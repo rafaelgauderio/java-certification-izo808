@@ -37,7 +37,10 @@ public class ProgramIntroduction {
         System.out.println("try and catch block\n" +
                 "\tWhen an exceptional event occurs, an exception is thrown.\n" +
                 "\tThe code that do something about this exception is called the 'exception handlle' and it the code 'catches the thrown exception.\n" +
-                "\tA catch/finally is required");
+                "\tA catch/finally is required\n\n" +
+                "We must catch ou declare checked exceptions.\n" +
+                "\t1. We surround the method that can have an exception in try-catch block.\n" +
+                "\t2. Or we throw the exception in the  method that call the method that can generated the exception.\n");
 
     }
 }
