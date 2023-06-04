@@ -6,7 +6,9 @@ public class FinallyBlock {
         System.out.println("The finally block is designed to tidying up (arrumar) the resources, independently  an exception occurs or not.\n" +
                 "If present, the finally block will be after the last catch block.\n" +
                 "It the are no catch blocks the finally will be after the try block.\n" +
-                "The finally block is ALWAYS executed, even though no exception has occured.\n");
+                "The finally block is ALWAYS executed, even though no exception has occured.\n" +
+                "We can not have a try alone. We must have the catch, the finally or both blocks.\n" +
+                "Can not have code between a try and the catch block\n");
 
         try {
             //int number = 17;
