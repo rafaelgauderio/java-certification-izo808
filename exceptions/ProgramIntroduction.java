@@ -40,7 +40,13 @@ public class ProgramIntroduction {
                 "\tA catch/finally is required\n\n" +
                 "We must catch ou declare checked exceptions.\n" +
                 "\t1. We surround the method that can have an exception in try-catch block.\n" +
-                "\t2. Or we throw the exception in the  method that call the method that can generated the exception.\n");
-
+                "\t2. Or we throw the exception in the  method that call the method that can generated the exception.\n\n" +
+                "Multi try and catch blocks.\n" +
+                "\tAll the cauch checked expcetions must be thrown from the try block, or we will have catch block unreachable.\n" +
+                "\tMultiple catch blocks are allowed and are avaluated in the order that the are code.\n" +
+                "\tWe must code to tha most specific to the least specific (most general) to note genereated unreachable catch blocks.\n" +
+                "\tMulti-catch blocks enable unrelated exceptions to be handled together, thereby avoiding code duplication.\n" +
+                "\tWe can not have a empty try block (checked exceptions and than the catch block.\n" +
+                "\tIf the catch blocks are for RuntimeExceptions only, we can have a empty try block.\n");
     }
 }
