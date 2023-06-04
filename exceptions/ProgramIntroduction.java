@@ -33,5 +33,11 @@ public class ProgramIntroduction {
         System.out.println("Call Stack\n" +
                 "Is the chain in order of the methods that your program executes to get to the current method.\n" +
                 "The last method called is at the top of the stack and the first method is at the bottom.\n");
+
+        System.out.println("try and catch block\n" +
+                "\tWhen an exceptional event occurs, an exception is thrown.\n" +
+                "\tThe code that do something about this exception is called the 'exception handlle' and it the code 'catches the thrown exception.\n" +
+                "\tA catch/finally is required");
+
     }
 }
