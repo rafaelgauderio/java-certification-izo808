@@ -9,7 +9,13 @@ public class ArrayTheory {
                 "Arrays of arrays is a multi-dimensional\n" +
                 "Include the size of the array only wen instantiate with new or declaring the elements\n" +
                 "The compiler (JVM) need to know how much space to allocate on the heap for the nem array.\n" +
-                "Multidimensinal arrays have to populated the size from array from the left to right");
+                "Multidimensinal arrays have to populated the size from array from the left to right.\n" +
+                "Initialising an array of objects is essentially an array of references to those objects.\n" +
+                "Array of 4 Strings, is an array of 4 references to those Strings.\n" +
+                "A refecence that do not have an object assigned to it is a null reference.\n" +
+                "We can access any individual element of the array using an index.\n" +
+                "Array objects have a public variable length, that represent the number of elementos of the array.\n");
+
         int [] notas; // recommended this way
         int grades [];
         int [] notas2 = new int[10];
