@@ -14,7 +14,8 @@ public class ArrayTheory {
                 "Array of 4 Strings, is an array of 4 references to those Strings.\n" +
                 "A refecence that do not have an object assigned to it is a null reference.\n" +
                 "We can access any individual element of the array using an index.\n" +
-                "Array objects have a public variable length, that represent the number of elementos of the array.\n");
+                "Array objects have a public variable length, that represent the number of elementos of the array.\n" +
+                "Array of arrays, is when each element of the array refers to other array");
 
         int [] notas; // recommended this way
         int grades [];
