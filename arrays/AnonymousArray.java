@@ -12,7 +12,7 @@ public class AnonymousArray {
         double [] arrayFator4 = new AnonymousArray().methodArray(array,4);
         System.out.println(Arrays.toString(new AnonymousArray().methodArray(array,2)));
         System.out.println(Arrays.toString(arrayFator4));
-       
+
 
     }
 
