@@ -15,7 +15,10 @@ public class ArrayTheory {
                 "A refecence that do not have an object assigned to it is a null reference.\n" +
                 "We can access any individual element of the array using an index.\n" +
                 "Array objects have a public variable length, that represent the number of elementos of the array.\n" +
-                "Array of arrays, is when each element of the array refers to other array");
+                "Array of arrays, is when each element of the array refers to other array\n" +
+                "Anonymous arrays (just-in-time arrays)\n" +
+                "\tanonymous array is not assign to anything.\n" +
+                "\tUseful when invoking a method that requires an array argument.\n");
 
         int [] notas; // recommended this way
         int grades [];
