@@ -47,8 +47,8 @@ class Fiat extends Car implements ExecutiveCar {
     }
 }
 
-class Volksmagen extends Car {
-    public Volksmagen(String name) {
+class Volkswagen extends Car {
+    public Volkswagen(String name) {
         super(name);
     }
 }
@@ -71,11 +71,11 @@ class Volksmagen extends Car {
 
             Fiat uno = new Fiat("Uno Mile");
             Ford escort = new Ford ("Escort Guaruja");
-            Car [] cars = {uno, new Car("Ferrari"), new Fiat("Stilo"), new Ford("Mustang"), escort, new Volksmagen("Gol Geração 4")};
+            Car [] cars = {uno, new Car("Ferrari"), new Fiat("Stilo"), new Ford("Mustang"), escort, new Volkswagen("Gol Geração 4")};
 
             System.out.println(Arrays.toString(cars));
 
-            Car [] cars2 = {new Volksmagen("Passat alemão"), new Fiat("Uno mile 2005")};
+            Car [] cars2 = {new Volkswagen("Passat alemão"), new Fiat("Uno mile 2005")};
             System.out.println(Arrays.toString(cars2));
 
         }
