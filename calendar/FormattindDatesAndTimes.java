@@ -34,6 +34,20 @@ public class FormattindDatesAndTimes {
         System.out.println(birthDate.format(fomart03));
         System.out.println(birthDate.format(fomart04));
 
+        System.out.println("\nCustom formatting time");
+        DateTimeFormatter format05 = DateTimeFormatter.ofPattern("hh:mm");
+        DateTimeFormatter format06 = DateTimeFormatter.ofPattern("hh:mm:ss");
+        DateTimeFormatter format07 = DateTimeFormatter.ofPattern("HH:mm");
+        DateTimeFormatter format08 = DateTimeFormatter.ofPattern("HH:mm a");
+        System.out.println(birthTime.format(format05));
+        System.out.println(birthTime.format(format06));
+        System.out.println(birthTime.format(format07));
+        System.out.println(birthTime.format(format08));
+
+        System.out.println("\nCustom formatting localDateTime");
+        DateTimeFormatter format09 = DateTimeFormatter.ofPattern("dd-MM-yyyy-hh:mm a");
+        System.out.println(birthDateTime.format(format09));
+
     }
 
 }
